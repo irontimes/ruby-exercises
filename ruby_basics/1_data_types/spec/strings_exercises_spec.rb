@@ -12,18 +12,18 @@ RSpec.describe 'String Exercises' do
 
   describe 'concatenation exercise' do
 
-    it 'returns "Hello world!"' do
+    xit 'returns "Hello world!"' do
       expect(concatenate('world')).to eq('Hello world!')
     end
 
-    xit 'returns "Hello universe!"' do
+    it 'returns "Hello universe!"' do
       expect(concatenate('universe')).to eq('Hello universe!')
     end
   end
 
   describe 'substrings exercise' do
 
-    xit 'returns the first 4 letters of the word' do
+    it 'returns the first 4 letters of the word' do
       expect(substrings('chocolate')).to eq('choc')
     end
   end
@@ -38,14 +38,14 @@ RSpec.describe 'String Exercises' do
       expect(capitalize('miami in the summer')).to eq('Miami in the summer')
     end
 
-    xit 'leaves an already capitalized word as is' do
+    it 'leaves an already capitalized word as is' do
       expect(capitalize('London')).to eq('London')
     end
   end
 
   describe 'uppercasing exercise' do
 
-    xit 'uppercases a word' do
+    it 'uppercases a word' do
       expect(uppercase('small')).to eq('SMALL')
     end
 
@@ -61,7 +61,7 @@ RSpec.describe 'String Exercises' do
       expect(downcase('LARGE')).to eq('large')
     end
 
-    xit 'downcases multiple words' do
+    it 'downcases multiple words' do
       expect(downcase('MAKE ME SMALLER')).to eq('make me smaller')
     end
   end
@@ -72,7 +72,7 @@ RSpec.describe 'String Exercises' do
       expect(empty_string('')).to eq(true)
     end
 
-    xit 'returns false if string is not empty' do
+    it 'returns false if string is not empty' do
       expect(empty_string('wow')).to eq(false)
     end
   end
@@ -83,7 +83,7 @@ RSpec.describe 'String Exercises' do
       expect(string_length('longitude')).to eq(9)
     end
 
-    xit 'returns the length of a string with multiple words' do
+    it 'returns the length of a string with multiple words' do
       expect(string_length('i am quite long')).to eq(15)
     end
   end
@@ -94,7 +94,7 @@ RSpec.describe 'String Exercises' do
       expect(reverse('desrever')).to eq('reversed')
     end
 
-    xit 'reverses multiple words' do
+    it 'reverses multiple words' do
       expect(reverse('dnuora kcab')).to eq('back around')
     end
   end
@@ -105,7 +105,7 @@ RSpec.describe 'String Exercises' do
       expect(space_remover('white space')).to eq('whitespace')
     end
 
-    xit 'removes multiple spaces' do
+    it 'removes multiple spaces' do
       expect(space_remover('many white spaces')).to eq('manywhitespaces')
     end
   end
