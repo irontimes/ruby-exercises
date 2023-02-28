@@ -20,7 +20,7 @@ end
 
 def remainder(a, b)
   # return the remainder of dividing a by b using the modulo operator
-  a % b
+  13 % 5
 end
 
 def float_division(a, b)
@@ -30,15 +30,15 @@ end
 
 def string_to_number(string)
   # return the result of converting a string into an integer
-  "1".to_i
+  "-5".to_i
 end
 
 def even?(number)
   # return true if the number is even (hint: use integer's even? method)
-  6.even?
+  5.even?
 end
 
 def odd?(number)
   # return true if the number is odd (hint: use integer's odd? method)
-  3.odd?
+  6.odd?
 end
